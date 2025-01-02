@@ -1,0 +1,85 @@
+/*  ====================== Setup Fonts ======================== */
+
+@font-face {
+  font-family: Rubik;
+  src: url("../assets/fonts/Rubik-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url("../assets/fonts/Rubik-Medium.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url("../assets/fonts/Rubik-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url("../assets/fonts/Rubik-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url("../assets/fonts/Rubik-ExtraBold.ttf");
+  font-weight: bolder;
+}
+
+/* ========================= Global Settings ================= */
+
+:root {
+  --main-font: Rubik;
+  --orange: #ff9900;
+  --orange-rgb: 255, 153, 0;
+  --black: #000000;
+  --black-rgb: 0, 0, 0;
+  --white: #fff;
+  --white-rgb: 255, 255, 255;
+  --gray: #555555;
+  --gray-rgb: 85, 85, 85;
+  --light-gray: #f1f1f1;
+  --light-gray-rgb: 241, 241, 241;
+  --dark-gray: #333333;
+  --dark-gray-rgb: 51, 51, 51;
+  --yellow: #ffca08;
+  --yellow-rgb: 255, 202, 8;
+  --blue: #146eb4;
+  --yellow-rgb: 20, 110, 180;
+}
+
+/* ======================== Categories List ================== */
+
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  text-align: center;
+}
+
+/* ======================= Footer ============================== */
+
+.footer {
+  /* height: 30px; */
+  background-color: #fff;
+  border: 2px solid var(--light-gray);
+}
+
+li.active {
+  color: var(--orange);
+}

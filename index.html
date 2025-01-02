@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/all.min.css" />
+    <link rel="stylesheet" href="./styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script src="./scripts/bootstrap.bundle.min.js"></script>
+    <link rel="manifest" href="/manifest.json" />
+    <!-- iOS Support -->
+    <link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="Amazon App" />
+    <link
+      rel="apple-touch-startup-image"
+      href="/assets/icons/icon-512x512.png"
+    />
+    <meta name="theme-color" content="#232f3e" />
+    <title>Amazon App</title>
+  </head>
+  <body class="min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./assets/images/amazon-logo.png"
+            alt="Amazon Logo"
+            width="100"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <form class="d-flex mx-auto">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-warning" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <main class="min-vh-100">
+      <section class="category-section py-2 my-3">
+        <div class="container">
+          <div class="row gy-3 mt-5" id="categoriesList"></div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="footer position-sticky bottom-0 w-100 d-flex flex-column align-items-center"
+    >
+      <div class="container py-2">
+        <ul class="list-unstyled d-flex justify-content-around w-100 m-0">
+          <li
+            class="d-flex flex-column align-items-center justify-content-center active"
+          >
+            <i class="fa-solid fa-house"></i>
+            <p class="m-0">Home</p>
+          </li>
+          <li
+            class="d-flex flex-column align-items-center justify-content-center"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p class="m-0">Cart</p>
+          </li>
+          <li
+            class="d-flex flex-column align-items-center justify-content-center"
+          >
+            <i class="fa-solid fa-bars"></i>
+            <p class="m-0">Menu</p>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
